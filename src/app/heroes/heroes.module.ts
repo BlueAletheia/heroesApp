@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { HeroesRoutingModule } from './heroes-routing.module';
@@ -10,6 +11,7 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+import { ConfirmarComponent } from './component/confirmar/confirmar.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     HeroeTarjetaComponent,
     HeroeTarjetaComponent,
     ImagenPipe,
+    ConfirmarComponent,
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule,
     FlexLayoutModule,
     MaterialModule,
+    FormsModule,
   ],
 })
 export class HeroesModule {}
